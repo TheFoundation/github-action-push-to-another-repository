@@ -51,7 +51,7 @@ inputs:
         
 runs:
   using: docker
-  image: ghcr.io/thefoundation/github-action-push-to-another-repository:main
+  image: docker://ghcr.io/thefoundation/github-action-push-to-another-repository:main
   args:
     - '${{ inputs.source-before-directory }}'
     - '${{ inputs.source-directory }}'
